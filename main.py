@@ -1,8 +1,9 @@
-from c import C
-from b import B
+from adaptor import Adaptor
+from tcpip import TCPIP
 
 
 if __name__ == "__main__":
 
-    C().display()
-    C(B).display()
+    Adaptor().run("Click")
+    print("=============\n")
+    Adaptor(TCPIP).run("Fold")
